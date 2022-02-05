@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inventory from "./components/Inventory/Inventory";
 import OrderReview from "./components/OrderReview/OrderReview";
 import NotFound from "./components/NotFound/NotFound";
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
 function App() {
   return (
     <div>
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Shop />}></Route>
           <Route exact path="/orders" element={<OrderReview />}></Route>
           <Route exact path="/inventory" element={<Inventory />}></Route>
+          <Route exact path="/placeorder" element={<PlaceOrder />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </Router>
